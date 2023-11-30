@@ -1,4 +1,10 @@
 - name: Create a user
   amazon.aws.iam_user:
-    name: testuser1
+    name: Mojo
+    state: present
+
+- name: Create a user with a password
+  amazon.aws.iam_user:
+    name: Mojo
+    password: SomeSecurePassword
     state: present
