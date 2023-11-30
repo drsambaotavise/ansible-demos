@@ -1,0 +1,4 @@
+- name: Create a user
+  amazon.aws.iam_user:
+    name: testuser1
+    state: present
