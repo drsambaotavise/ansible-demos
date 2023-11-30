@@ -8,3 +8,10 @@
     name: Mojo
     password: SomeSecurePassword
     state: present
+
+- name: Create a user and attach a managed policy using its ARN
+  amazon.aws.iam_user:
+    name: Mojo
+    managed_policies:
+      - arn:aws:iam::aws:policy/AmazonSNSFullAccess
+    state: present
