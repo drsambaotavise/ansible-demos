@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # creating IAM policy code
+=======
+# Creating IAM policy code
+>>>>>>> 9199ca53403893a7036e00cc88362bf6923fafae
 
 ---
 - name: Create basic IAM policy
@@ -19,6 +23,7 @@
             ]
           }
         ]
+<<<<<<< HEAD
       }
 
 React
@@ -34,3 +39,6 @@ Reply
 
 
 
+=======
+      }
+>>>>>>> 9199ca53403893a7036e00cc88362bf6923fafae
