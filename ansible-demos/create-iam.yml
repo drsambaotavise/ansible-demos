@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # creating basic IAM policy
 
 ---
@@ -20,3 +21,45 @@
            }
          ]
        }n 
+=======
+# Creating IAM policy code
+
+---
+- name: Create basic IAM policy
+  iam_policy:
+    name: my-policy
+    state: present
+    policy_document: |
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "s3:GetObject"
+            ],
+            "Resource": [
+              "arn:aws:s3:::example-bucket/*"
+            ]
+          }
+        ]
+      }
+>>>>>>> 9199ca53403893a7036e00cc88362bf6923fafae
+
+---
+- name: Create Route 53 IAM policy
+  iam_policy:
+    name: Route53Policy
+    state: present
+    policy_document: |
+      Version: "2012-10-17"
+      Statement:
+        - Sid: Route53Permissions
+          Effect: Allow
+          Action:
+            - "route53:Get*"
+            - "route53:List*"
+            - "route53:ChangeResourceRecordSets"
+          Resource:
+            - "arn:aws:route53:::hostedzone/*"
+            - "arn:aws:route53:::change/*"
