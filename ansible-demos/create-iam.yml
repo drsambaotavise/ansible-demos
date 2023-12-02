@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # creating basic IAM policy
 
 ---
@@ -22,7 +23,11 @@
          ]
        }n 
 =======
+# creating IAM policy code
+>>>>>>> 4b3b1712202aaa3d78cfce2a104384b8804b4e0b
+=======
 # Creating IAM policy code
+>>>>>>> 9199ca53403893a7036e00cc88362bf6923fafae
 
 ---
 - name: Create basic IAM policy
@@ -43,6 +48,7 @@
             ]
           }
         ]
+<<<<<<< HEAD
       }
 >>>>>>> 9199ca53403893a7036e00cc88362bf6923fafae
 
@@ -63,3 +69,24 @@
           Resource:
             - "arn:aws:route53:::hostedzone/*"
             - "arn:aws:route53:::change/*"
+=======
+<<<<<<< HEAD
+      }
+
+React
+
+Reply
+
+
+
+
+
+
+
+
+
+
+=======
+      }
+>>>>>>> 9199ca53403893a7036e00cc88362bf6923fafae
+>>>>>>> 4b3b1712202aaa3d78cfce2a104384b8804b4e0b
